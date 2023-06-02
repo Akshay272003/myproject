@@ -8,13 +8,20 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import Button from '@mui/material/Button';
 import ActivityToggle from './ActivityToggle';
 import MessageLogo from '../../../assets/message-icon.svg'
+import Topbar from "../../topbar/Topbar"
+
+// http://ec2-3-96-57-202.ca-central-1.compute.amazonaws.com
+// RAJKUMAR JAISWAL
+// http://ec2-13-232-241-122.ap-south-1.compute.amazonaws.com/dashboard
 
 const Notifications = () => {
 
-    const [preferredNotifyMethod, setPreferredNotifyMethod] = useState()
+    const [preferredNotifyMethod, setPreferredNotifyMethod] = useState('a')
 
     return (
         <>
+            <Topbar title="Notifications" />
+
             <div className={`main-content ${styles.container}`}>
 
                 <div className={`left-container bg-transparent flex-col ${styles.gap_2}`}>
@@ -62,7 +69,7 @@ const Notifications = () => {
                         <Divider />
 
                         <div className={`flex w-full ${styles.save_btn_container}`}>
-                        <Button variant="contained" size="small" fontSize="small">Save</Button>
+                            <Button variant="contained" size="small" fontSize="small">Save</Button>
                         </div>
                     </div>
 
@@ -160,8 +167,8 @@ const Notifications = () => {
                                 For more info, text HELP to 247262. To cancel mobile notifications, reply STOP to 247262. Message data rates may apply.
                             </p>
                         </div>
-                        
-                        
+
+
                     </div>
                 </div>
 

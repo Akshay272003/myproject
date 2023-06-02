@@ -1,14 +1,14 @@
 import NavTree from "./NavTree";
 import "./style.css";
 
-const Topbar = () => {
+const Topbar = ({title}) => {
     return ( 
         <div className="topbar">
 
-            <NavTree />
+            <NavTree title={title} />
 
             <h2 className="heading topbar-heading">
-                Global Preferences
+                {title}
             </h2>
 
         </div>
