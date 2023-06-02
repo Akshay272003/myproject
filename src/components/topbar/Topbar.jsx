@@ -1,4 +1,5 @@
 import NavTree from "./NavTree";
+import "./style.css";
 
 const Topbar = () => {
     return ( 

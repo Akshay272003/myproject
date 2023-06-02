@@ -1,0 +1,31 @@
+.container{
+    padding: 1em 0;
+}
+@media screen and (min-width:668px) {
+    .container{
+        padding: 1em 3em;
+    }
+}
+.preferred_container{
+    padding: 1.5em;
+    background-color: var(--light);
+}
+.preferred_options{
+    margin: 0.5em 0;
+}
+.save_btn_container{
+    justify-content: end;
+    padding-top: 1em;
+}
+.bg_little_dark{
+    background: rgb(224, 222, 222) !important;
+}
+.sub_dark_title{
+    font-size: var(--sub-title);
+}
+.mt_small{
+    margin-top: 0.5em;
+}
+.gap_2{
+    gap: 2em;
+}

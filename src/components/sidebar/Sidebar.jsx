@@ -1,5 +1,6 @@
 import DashboardSvg from '../../assets/dashboard.svg';
 import SideLink from './SideLink';
+import "./style.css"
 
 const Sidebar = () => {
     return ( 
@@ -21,8 +22,9 @@ const Sidebar = () => {
                 <SideLink linkName="Subscription" />
                 <SideLink linkName="Security" />
                 <SideLink linkName="Referrals" />
-                <SideLink linkName="Notifications" data={4} />
-                <SideLink linkName="Preferences" isActive={true}/>
+                <SideLink url="/notifications" linkName="Notifications" />
+                <SideLink url="/preferences" linkName="Preferences" />
+
             </div>
 
         </div>
