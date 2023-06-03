@@ -17,9 +17,9 @@ const Sidebar = () => {
             </div>
 
             <div className='side-nav flex-col'>
-                <SideLink linkName="Account" />
+                <SideLink url="/account" linkName="Account" />
                 <SideLink linkName="Company" />
-                <SideLink linkName="Subscription" />
+                <SideLink url="/subscription" linkName="Subscription" />
                 <SideLink url="/security-setting" linkName="Security" />
                 <SideLink linkName="Referrals" />
                 <SideLink url="/notifications" linkName="Notifications" />

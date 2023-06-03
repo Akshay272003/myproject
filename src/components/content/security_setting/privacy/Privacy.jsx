@@ -93,8 +93,8 @@ const Privacy = () => {
                 <div className={`flex-col gap-2 bg-light rounded p-1`}>
                     <SideHelper
                         iconSrc={"src\\assets\\sheild.png"}
-                        heading="Keep your account secure"
-                        descriptions={["We regularly review accounts to make sure they're secure as possible. We'll also let you know if there's more we can do to increase the security of your account."]}
+                        heading="Commited to privacy"
+                        descriptions={["Kargoplex is committed to keeping your data protected. See details in our Privacy policy.", <a href="">Privacy policy</a>]}
                     />
                 </div>
             </div>

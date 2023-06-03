@@ -26,8 +26,6 @@ const Notifications = () => {
 
                         <Divider />
 
-                        {/* <div className={styles.preferred_options}> */}
-
                         <RadioGroup
                             aria-labelledby="demo-radio-buttons-group-label"
                             value={preferredNotifyMethod}

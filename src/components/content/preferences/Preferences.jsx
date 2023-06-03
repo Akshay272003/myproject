@@ -52,7 +52,7 @@ const Preferences = () => {
     const [timeZone, setTimeZone] = useState("(GMT-05:00) Eastern Time (US & CANADA)")
 
 
-    const toggleEdit = async (planDetailId, editFormId) => {
+    const toggleEdit = (planDetailId, editFormId) => {
         const planDetail = document.getElementById(planDetailId);
         const editForm = document.getElementById(editFormId);
 
