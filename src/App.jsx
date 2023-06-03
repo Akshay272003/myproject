@@ -1,6 +1,9 @@
 import Preferences from "./components/content/preferences/Preferences";
 import Notifications from "./components/content/notifications/Notification";
+import SecuritySetting from "./components/content/security_setting/SecuritySetting";
+
 import Sidebar from "./components/sidebar/Sidebar";
+
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 const App = () => {
@@ -14,6 +17,7 @@ const App = () => {
         <div className="">
           <Routes>
             <Route path="/" element={<Notifications />} />
+            <Route path="/security-setting" element={<SecuritySetting />} />
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/preferences" element={<Preferences />} />
           </Routes>

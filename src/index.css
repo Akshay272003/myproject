@@ -21,6 +21,9 @@ body{
   font-family: 'Roboto', sans-serif;
   background-color: var(--less-light);
 }
+.main{
+  display: flex;
+}
 .flex-col{
   display: flex;
   flex-direction: column;
@@ -34,6 +37,9 @@ body{
 .justify-content-center{
   justify-content: center;
 }
+.justify-content-end{
+  justify-content: end;
+}
 .items-center{
   align-items: center;
 }
@@ -43,8 +49,14 @@ body{
 .gap-half{
   gap: 0.5em;
 }
+.gap-2{
+  gap: 2em;
+}
 .flex-wrap{
   flex-wrap: wrap;
+}
+.flex-1{
+  flex: 1;
 }
 .w-full{
   width: 100%;
@@ -52,8 +64,11 @@ body{
 .bg-light{
   background-color: var(--light);
 }
-.main{
-  display: flex;
+.bg-little-dark{
+  background: rgb(224, 222, 222) !important;
+}
+.bg-dark{
+  background-color: var(--dark);
 }
 .content-container{
   width: 100%;
@@ -69,11 +84,17 @@ body{
 .font-small{
   font-size: var(--sub-title);
 }
+.font-xs{
+  font-size: 0.6rem;
+}
 .font-title{
   font-size: var(--title);
 }
 .font-light{
   color: var(--grey);
+}
+.font-white{
+  color: var(--light);
 }
 .font-dark{
   color:var(--dark)
@@ -84,8 +105,11 @@ body{
 .mt-1{
   margin-top: 1em;
 }
+.mt-half{
+  margin-top: 0.5em;
+}
 .rounded{
-  border-radius: 7px;
+  border-radius: 9px;
 }
 .p-1{
   padding: 1em;
@@ -93,46 +117,22 @@ body{
 .p-half{
   padding: 0.5em;
 }
-
-.main-content{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
+.py-1{
+  padding: 1em 0;;
 }
-/* both sub container  */
-.left-container, .right-container{
-  background-color: var(--light);
-  padding: 1.5em 1em;
-  border-radius: 15px;
-}
-/* --left detail container--  */
-.left-container{
-  width: 100%;
-}
- /* right detail container  */
- .right-container{
-  flex: 1;
-  gap: 1em;
-  padding: 1.5em;
-  min-width: 0px;
- }
-@media screen and (min-width:750px) {
-  .main-content{
-    gap: 1em;
-  }
-  .left-container{
-    width: 65%;
-  }
-  .right-container{
-    min-width: 210px;
-    height: fit-content;
-  }
-}
-
 .bg-transparent{
   background-color: transparent;
 }
 a{
   text-decoration: none;
+}
+.hidden{
+  display: none !important;
+}
+.helper-logo{
+  height: 50px;
+  width: 50px;
+}
+.color-blue{
+  color: blue;
 }

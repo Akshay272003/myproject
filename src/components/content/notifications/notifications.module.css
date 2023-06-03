@@ -1,17 +1,31 @@
 .container{
     padding: 1em 0;
+    width: 100%;
+    gap: 1em;
 }
 @media screen and (min-width:668px) {
     .container{
         padding: 1em 3em;
     }
 }
+.main_container{
+    width: 100%;
+}
+.main_container, .helper_container{
+    padding: 1.5em 1em;
+}
+@media screen and (min-width:750px) {
+    .main_container{
+        width: 65%;
+    }
+    .helper_container{
+        min-width: 210px;
+        height: fit-content;
+    }
+}
 .preferred_container{
     padding: 1.5em;
     background-color: var(--light);
-}
-.preferred_options{
-    margin: 0.5em 0;
 }
 .save_btn_container{
     justify-content: end;
@@ -22,10 +36,4 @@
 }
 .sub_dark_title{
     font-size: var(--sub-title);
-}
-.mt_small{
-    margin-top: 0.5em;
-}
-.gap_2{
-    gap: 2em;
 }

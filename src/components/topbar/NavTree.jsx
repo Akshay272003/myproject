@@ -1,9 +1,11 @@
+import {Link} from "react-router-dom";
+
 const NavTree = ({title}) => {
     return ( 
         <div className="nav-tree sub-title">
-            <span className="bold sub-title">Dashboard</span>
+            <Link to="/" className="bold sub-title">Dashboard</Link>
             {'>'}
-            <span className="bold sub-title">Settings</span>
+            <Link to="/" className="bold sub-title">Settings</Link>
             {'>'}
             <span className="sub-title">{title}</span>
         </div>
