@@ -3,11 +3,11 @@ import Topbar from "../../topbar/Topbar";
 import SideHelper from "../reusables/SideHelper";
 import { Divider, Button } from "@mui/material"
 import { useState } from "react";
-import EditLegalName from "./EditLegalName";
 import EditGender from "./EditGender";
-import EditPhone from "./EditPhone";
-import EditEmail from "./EditEmail";
+import EditForm from "../reusables/EditForm";
+import ProfileView from "../reusables/ProfileView";
 import KeyLogo from "../../../assets/key.svg";
+
 
 const Account = () => {
 
@@ -29,8 +29,22 @@ const Account = () => {
         <>
             <Topbar title={`General Account Settings`} />
 
-            <div>
-                profile container
+            {/* profile view */}
+            <div className={`${styles.container}`}>
+                <div className={`${styles.profile_container}`}>
+                    <ProfileView
+                        name="George Lambeau"
+                        isPerson={true}
+                        isVerified={true}
+                        yearJoined="2022"
+                        role="Admin"
+                        avatarSrc="src\assets\person-avatar.jpg"
+                        shipments="400"
+                        messages="12,500"
+                        issues="100"
+                        ratingValue="4.7"
+                    />
+                </div>
             </div>
 
             <div className={`${styles.container} flex flex-wrap`}>
@@ -49,17 +63,15 @@ const Account = () => {
                             </div>
                             <Divider />
                             {/* edit name details */}
-                            <div className="py-1">
-                                <div className="flex justify-content-between items-center">
-                                    <span className="font-small">Legal Name</span>
-                                    <Button size="small" style={{ textTransform: 'none' }} onClick={() => toggleEdit("name-detail", "legal-name-form")}>Edit</Button>
-                                </div>
-                                <span id="name-detail" className="font-title font-light">{firstName} {lastName}</span>
-
-                                <div id="legal-name-form" className="hidden">
-                                    <EditLegalName setFirstName={setFirstName} setLastName={setLastName} />
-                                </div>
-                            </div>
+                            <EditForm
+                                title="Legal Name"
+                                editDescription=""
+                                detail={`${firstName} ${lastName}`}
+                                fieldsDetail={[
+                                    {fieldLabel:'First Name', fieldType:'text'},
+                                    {fieldLabel:'Last Name', fieldType:'text'}
+                                ]}
+                            />
                             <Divider />
                             {/* gender  */}
                             <div className="py-1">
@@ -84,30 +96,24 @@ const Account = () => {
                             </div>
                             <Divider />
                             {/* Phone number   */}
-                            <div className="py-1">
-                                <div className="flex justify-content-between items-center">
-                                    <span className="font-small">Phone Number</span>
-                                    <Button size="small" style={{ textTransform: 'none' }} onClick={() => toggleEdit("phone-detail", "phone-form")}>Edit</Button>
-                                </div>
-                                <span id="phone-detail" className="font-title font-light">{phone}</span>
-
-                                <div id="phone-form" className="hidden">
-                                    <EditPhone setPhone={setPhone} />
-                                </div>
-                            </div>
+                            <EditForm
+                                title="Phone Number"
+                                editDescription=""
+                                detail={`${phone}`}
+                                fieldsDetail={[
+                                    {fieldLabel:'Phone Number', fieldType:'number'}
+                                ]}
+                            />
                             <Divider />
                             {/* email   */}
-                            <div className="py-1">
-                                <div className="flex justify-content-between items-center">
-                                    <span className="font-small">Email</span>
-                                    <Button size="small" style={{ textTransform: 'none' }} onClick={() => toggleEdit("email-detail", "email-form")}>Edit</Button>
-                                </div>
-                                <span id="email-detail" className="font-title font-light">{email}</span>
-
-                                <div id="email-form" className="hidden">
-                                    <EditEmail setEmail={setEmail} />
-                                </div>
-                            </div>
+                            <EditForm
+                                title="Email"
+                                editDescription=""
+                                detail={`${email}`}
+                                fieldsDetail={[
+                                    {fieldLabel:'E-mail', fieldType:'email'}
+                                ]}
+                            />
 
                         </div>
 
