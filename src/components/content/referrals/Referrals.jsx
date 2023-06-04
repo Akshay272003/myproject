@@ -11,7 +11,7 @@ import SideHelper from "../reusables/SideHelper";
 const Referrals = () => {
     return (
         <>
-            <Topbar title={`Subscriptions & Products`} link_title="Subscriptions" />
+            <Topbar title={`Referrals`} />
 
             <div className={`${styles.container} flex flex-wrap`}>
                 <div className={`${styles.main_container} flex-col gap-2`}>
