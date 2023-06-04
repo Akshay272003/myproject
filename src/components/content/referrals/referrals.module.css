@@ -3,11 +3,6 @@
     width: 100%;
     gap: 1em;
 }
-.profile_container{
-    padding: 1em 1em;
-    width: 100%;
-    background-color: rgba(0, 0, blue, 6);
-}
 @media screen and (min-width:668px) {
     .container{
         padding: 1em 3em;
@@ -28,7 +23,35 @@
         height: fit-content;
     }
 }
+.detail_box_container{
+    width: 46%;
+}
+.font_little_white{
+    color: rgb(221, 221, 204)
+}
+.profile_name{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.credit_data{
+    font-size: 1.1rem;
+}
 .preferred_container{
     padding: 1.5em;
     background-color: var(--light);
+}
+.referral_link{
+    background-color: rgb(241, 238, 255);
+}
+.basis_33{
+    flex-basis: 33%;
+}
+.text_green{
+    color: rgb(54, 194, 54);
+}
+.text-orange{
+    color: rgb(255, 81, 0);
+}
+.gap_small{
+    gap: 0.3em;
 }

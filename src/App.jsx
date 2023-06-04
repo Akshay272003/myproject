@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Subscription from "./components/content/subscription/Subscription";
 import Account from "./components/content/account/Account";
 import Company from "./components/content/company/Company";
+import Referrals from "./components/content/referrals/Referrals";
 
 const App = () => {
   return ( 
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/company" element={<Company />} />
             <Route path="/subscription" element={<Subscription />} />
             <Route path="/security-setting" element={<SecuritySetting />} />
+            <Route path="/referrals" element={<Referrals />} />
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/preferences" element={<Preferences />} />
           </Routes>

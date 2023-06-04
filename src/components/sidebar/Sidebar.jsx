@@ -21,7 +21,7 @@ const Sidebar = () => {
                 <SideLink url="/company" linkName="Company" />
                 <SideLink url="/subscription" linkName="Subscription" />
                 <SideLink url="/security-setting" linkName="Security" />
-                <SideLink linkName="Referrals" />
+                <SideLink url="/referrals" linkName="Referrals" />
                 <SideLink url="/notifications" linkName="Notifications" />
                 <SideLink url="/preferences" linkName="Preferences" />
 

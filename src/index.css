@@ -43,6 +43,9 @@ body{
 .items-center{
   align-items: center;
 }
+.items-end{
+  align-items: flex-end;
+}
 .gap-1{
   gap: 1em;
 }
@@ -60,6 +63,12 @@ body{
 }
 .w-full{
   width: 100%;
+}
+.w-half{
+  width: 50%;
+}
+.w-300{
+  width: 300px;
 }
 .bg-light{
   background-color: var(--light);
@@ -138,4 +147,20 @@ a{
 }
 .color-blue{
   color: blue;
+}
+.blue_grad{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 46%, rgba(0,108,255,1) 100%); 
+}
+.green_grad{
+  background: rgb(54,135,92);
+  background: linear-gradient(90deg, rgba(54,135,92,1) 0%, rgba(78,242,124,1) 100%);  
+}
+.orange_grad{
+  background: rgb(244,120,42);
+  background: linear-gradient(90deg, rgba(244,120,42,1) 0%, rgba(221,215,137,1) 100%);  
+}
+.brown_grad{
+  background: rgb(62,30,0);
+  background: linear-gradient(90deg, rgba(62,30,0,1) 0%, rgba(222,171,132,1) 100%); 
 }
