@@ -1,0 +1,16 @@
+.search_input{
+    border: none;
+    padding: 0.3em 0.6em;   
+}
+.doc_box{
+    width: 100%;
+    padding: 0.4em 1em;
+}
+@media screen and (min-width:600px) {
+    .doc_box{
+        width: 48%;
+    }
+}
+.doc_box:hover{
+    background-color: #bdcedd;
+}

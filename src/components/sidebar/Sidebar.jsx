@@ -17,13 +17,13 @@ const Sidebar = () => {
             </div>
 
             <div className='side-nav flex-col'>
-                <SideLink url="/account" linkName="Account" />
-                <SideLink url="/company" linkName="Company" />
-                <SideLink url="/subscription" linkName="Subscription" />
-                <SideLink url="/security-setting" linkName="Security" />
-                <SideLink url="/referrals" linkName="Referrals" />
-                <SideLink url="/notifications" linkName="Notifications" />
-                <SideLink url="/preferences" linkName="Preferences" />
+                <SideLink url="settings/account" linkName="Account" />
+                <SideLink url="settings/company" linkName="Company" />
+                <SideLink url="settings/subscription" linkName="Subscription" />
+                <SideLink url="settings/security-setting" linkName="Security" />
+                <SideLink url="settings/referrals" linkName="Referrals" />
+                <SideLink url="settings/notifications" linkName="Notifications" />
+                <SideLink url="settings/preferences" linkName="Preferences" />
 
             </div>
 
