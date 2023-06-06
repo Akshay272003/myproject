@@ -8,8 +8,13 @@
 }
 .shipping_details{
     height: 100%;
-    flex-basis: 60%;
     border-radius: 10px;
+    width: 100%;
+}
+@media screen and (min-width:500px) {
+    .shipping_details{
+        flex-basis: 60%;
+    }
 }
 .progress_container{
     padding: 2em 1em;
@@ -26,4 +31,44 @@
     height: 100%;
     background-color: red;
     border-radius: 10px;
+}
+.current_progress{
+    position: absolute;
+    translate: -100%;
+    top: -14px;
+}
+.red_pin{
+    position: relative;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: rgb(250,0,0);
+    background: radial-gradient(circle, rgba(250,0,0,1) 0%, rgba(255,152,152,1) 100%); 
+}
+.red_pin::after{
+    content: "";
+    position: absolute;
+    top: 9px;
+    width: 1px;
+    background-color: black;
+    height: 5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.blue_circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: blue;
+    position: relative;
+}
+.is_from::after{
+    content: "";
+    top: 10px;
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background-color: blue;
+    left: 50%;
+    transform: translateX(-50%);
 }

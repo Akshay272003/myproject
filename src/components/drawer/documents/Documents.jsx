@@ -74,7 +74,6 @@ const Documents = () => {
                 <div className="mt-2 flex justify-content-center">
                     <Pagination count={2} />
                 </div>
-
             </div>
         </>
      );

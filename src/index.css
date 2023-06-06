@@ -142,6 +142,9 @@ body{
   padding-left: 0.3em;
   padding-right: 0.3em;
 }
+.pt-1{
+  padding-top: 1em;
+}
 .bg-transparent{
   background-color: transparent;
 }

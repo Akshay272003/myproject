@@ -10,7 +10,7 @@
     width: 80%;
     background-color: white;
     overflow-x: visible;
-    transition: width 0.5s linear;
+    transition: width 1s linear;
 }
 @media screen and (min-width:750px) {
     .drawer{
@@ -39,9 +39,9 @@
     align-items: center;
     top: -1em;
     left: -2.2em;
-    background-color: rgba(62, 75, 253, 0.664);
+    background-color: rgba(195, 199, 255, 0.66);
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    box-shadow: 0 0 4px gray;
+    box-shadow: 2px 2px 5px #b5b5b5;
 }

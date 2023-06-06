@@ -1,0 +1,42 @@
+.side_icon::before{
+    content:"";
+    position: absolute;
+    width: 3px;
+    height: 1em;
+    top: -1em;
+    left: 50%;
+    translate: -50%;
+    background: #c1c1c1;
+}
+.side_icon::after{
+    content:"";
+    position: absolute;
+    width: 3px;
+    height: 33px;
+    top: 30px;
+    left: 50%;
+    translate: -50%;
+    background: #c1c1c1;
+}
+.side_icon{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+.blue_icon{
+    background: blue;
+}
+.orange_icon{
+    background: orange;
+}
+.green_icon{
+    background: green;
+}
+.dark_icon{
+    background: var(--dark);
+}
+.sky_icon{
+    background: skyblue;
+}
+

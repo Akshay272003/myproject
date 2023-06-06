@@ -3,11 +3,12 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import ShipSource from "./ShipSource";
 import CarrierDetail from "../reuse/CarrierDetail";
 import { useState } from "react";
-import {Divider} from "@mui/material";
+import { Divider } from "@mui/material";
+import Map from "./Map";
 
 const OverView = () => {
 
-    const [progress, setProgress] = useState(50)
+    const [progress, setProgress] = useState(79)
 
     return (
         <div>
@@ -33,12 +34,12 @@ const OverView = () => {
             </div>
 
             {/* map container  */}
-            <div>
-
+            <div className="rounded mt-1">
+                <Map />
             </div>
 
             {/* shipping details  */}
-            <div className="flex justify-content-between mt-1">
+            <div className="flex justify-content-between mt-1 gap-1 flex-wrap">
                 <div>
                     <h6 className="font-xs font-dark mb-1">
                         ID: container id
@@ -66,6 +67,7 @@ const OverView = () => {
                         title="PLACE OF LOADING"
                         placeName="Indore, India"
                         flag="&#127470;&#127475;"
+                        isFrom={true}
                     />
                     <ShipSource
                         title="PLACE OF DISCHARGE"
@@ -85,20 +87,39 @@ const OverView = () => {
 
             {/* progress  */}
             <div className={`${styles.progress_container} bg-less-light mt-2 rounded`}>
-                <div className={`${styles.progress}`}>
-                    <div
-                        className={`${styles.progress_bar}`}
-                        style={{ translate: `${progress - 100}%` }}
-                    >
+
+                {/* progress bar  */}
+                <div className="relative">
+
+                    {/* current position */}
+                    {progress > 20 && progress < 80 &&
+                        <div
+                            style={{ left: `${progress}%` }}
+                            className={`${styles.current_progress} flex gap-half`}
+                        >
+                            <span className="font-xs">Dewas, India</span>
+                            <div className={`${styles.red_pin}`}>
+                            </div>
+                        </div>
+                    }
+
+
+                    <div className={`${styles.progress}`}>
+                        <div
+                            className={`${styles.progress_bar}`}
+                            style={{ translate: `${progress - 100}%` }}
+                        >
+                        </div>
                     </div>
-                </div>
-                <div className="flex justify-content-between mt-half">
-                    <span className="font-small font-dark">
-                        Indore, India
-                    </span>
-                    <span className="font-small font-dark">
-                        Dewas, India
-                    </span>
+
+                    <div className="flex justify-content-between mt-half">
+                        <span className="font-small font-dark">
+                            Indore, India
+                        </span>
+                        <span className="font-small font-dark">
+                            Bhopal, India
+                        </span>
+                    </div>
                 </div>
             </div>
 

@@ -45,7 +45,7 @@ const Drawer = () => {
 
     return (
         <div className={`relative`}>
-            <div id="drawer" className={`${styles.drawer}`}>
+            <div id="drawer" className={`${styles.drawer} ${styles.hidden}`}>
 
                 <div className={`${styles.inner_main}`}>
                     {/* head section  */}
