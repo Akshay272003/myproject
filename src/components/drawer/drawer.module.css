@@ -29,7 +29,7 @@
 }
 .tab{
     text-transform: none !important;
-    padding: 0 0.4em !important;
+    font-size: .7rem !important;
     min-width: 70px !important;   
 }
 .close_button{

@@ -5,13 +5,13 @@ const Activity = () => {
     return ( 
         <div>
             {/* head  */}
-            <div className="p-1 bg-less-light mb-1">
-                <h5 className="heading">Shipment Activity Feed</h5>
+            <div className="p-1 bg-less-light mb-2">
+                <h5 className="font-dark">Shipment Activity Feed</h5>
             </div>
 
             <Divider />
 
-            <div className="flex-col">
+            <div className="flex-col mt-1">
                 <ActivityDetail 
                     name="Alisa Charm"
                     title="Customs clearance payment received"

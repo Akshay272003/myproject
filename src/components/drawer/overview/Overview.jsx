@@ -34,12 +34,12 @@ const OverView = () => {
             </div>
 
             {/* map container  */}
-            <div className="rounded mt-1">
+            <div className="rounded mt-2">
                 <Map />
             </div>
 
             {/* shipping details  */}
-            <div className="flex justify-content-between mt-1 gap-1 flex-wrap">
+            <div className="flex justify-content-between items-center mt-2 gap-1 flex-wrap p-half">
                 <div>
                     <h6 className="font-xs font-dark mb-1">
                         ID: container id
@@ -78,12 +78,15 @@ const OverView = () => {
             </div>
 
             {/* carrier details  */}
-            <CarrierDetail
-                vessal={"MSC"}
-                billOfLanding={"MEDUMT146799"}
-                container={"CXDU2004500"}
-                bookingRef={"193CA0679879"}
-            />
+            <div className="mt-2">
+                <CarrierDetail
+                    vessal={"MSC"}
+                    billOfLanding={"MEDUMT146799"}
+                    container={"CXDU2004500"}
+                    bookingRef={"193CA0679879"}
+                    companyImgSrc = "src\assets\idPass.png"
+                />
+            </div>
 
             {/* progress  */}
             <div className={`${styles.progress_container} bg-less-light mt-2 rounded`}>
@@ -123,7 +126,7 @@ const OverView = () => {
                 </div>
             </div>
 
-            <div className="flex-col mt-1 mb-1">
+            <div className="flex-col mt-2 mb-1 gap-half">
                 <div className="flex gap-1">
                     <span className="font-xs">COMMODITY NAME:</span>
                     <span className="font-xs font-dark">Soda Ash</span>

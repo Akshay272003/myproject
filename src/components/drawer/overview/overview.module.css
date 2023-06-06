@@ -72,3 +72,8 @@
     left: 50%;
     transform: translateX(-50%);
 }
+.google_map{
+    height: 30vh;
+    width: 100%;
+    border-radius: 15px;
+}

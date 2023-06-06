@@ -10,8 +10,8 @@ const Payment = () => {
                 <span className="font-light font-xs">Due 07/12/2022</span>
             </div>
 
-            {/* due amount ingo  */}
-            <div className={`${styles.due_container} p-1 mt-half rounded flex justify-content-between`}>
+            {/* due amount info  */}
+            <div className={`${styles.due_container} p-1 mt-1 rounded flex justify-content-between`}>
                 <div className="flex-col justify-content-center gap-half">
                     <span className="font-light font-small">
                         AMOUNT DUE
@@ -27,7 +27,7 @@ const Payment = () => {
             </div>
 
             {/* shipment invoice details  */}
-            <div className="px-xs mt-half">
+            <div className="px-xs mt-2">
                 <span className="sub-title">
                     Shipment Invoice Details
                 </span>
@@ -51,9 +51,9 @@ const Payment = () => {
                 />
                 <Divider />
 
-                <div className="flex-col gap-half">
+                <div className="flex-col gap-1">
                     {/* sub total  */}
-                    <div className="flex justify-content-between gap-1">
+                    <div className="flex justify-content-between gap-1 mt-half">
                         <span className="heading">Subtotal</span>
                         <span className="heading">$4,680</span>
                     </div>
@@ -77,7 +77,7 @@ const Payment = () => {
 
                 <Divider />
 
-                <div className="flex justify-content-between gap-1">
+                <div className="flex justify-content-between gap-1 mt-half">
                     <span className="heading">
                         Total
                     </span>
@@ -89,7 +89,7 @@ const Payment = () => {
 
 
             {/* payments  */}
-            <div className="px-xs mt-half">
+            <div className="px-xs mt-2">
                 <span className="sub-title">
                     Payments
                 </span>
@@ -118,7 +118,7 @@ const Payment = () => {
             <Divider />
 
             {/* cargo custom duty invoice  */}
-            <div className="px-xs mt-half flex justify-content-between items-center mt-1">
+            <div className="px-xs mt-2 flex justify-content-between items-center mt-1">
                 <span className="sub-title">
                     Cargo Custom Duty Invoice
                 </span>
@@ -126,7 +126,7 @@ const Payment = () => {
                     Pending
                 </div>
             </div>
-            <div className="mt-half flex-col gap-half p-1 bg-less-light rounded">
+            <div className="mt-half flex-col gap-1 p-1 bg-less-light rounded">
                 <div>
                     <div className="flex justify-content-between">
                         <span className="font-small font-dark">

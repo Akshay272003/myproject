@@ -5,7 +5,7 @@ const ActivityDetail = ({date, time, title, avatarSrc, name}) => {
         <>
             <div className="mt-1 mb-1">
                 <div className="flex justify-content-between gap-1 items-center">
-                    <strong className="font-small font-dark">{title}</strong>
+                    <span className="font-small font-dark">{title}</span>
                     <span className="font-xs font-light">
                         {`${date} ${time}`}
                     </span>

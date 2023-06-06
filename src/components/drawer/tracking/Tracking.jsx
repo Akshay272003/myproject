@@ -7,18 +7,19 @@ import styles from "./tracking.module.css";
 const Tracking = () => {
     return (
         <>
-            <div className="mb-2">
+            <div className={`mb-2`}>
 
                 <CarrierDetail
                     vessal={"MSC"}
                     billOfLanding={"MEDUMT146799"}
                     container={"CXDU2004500"}
                     bookingRef={"193CA0679879"}
+                    companyImgSrc="src\assets\idPass.png"
                 />
             </div>
             <Divider />
 
-            <div className="p-1 bg-less-light mt-1 rounded flex-col">
+            <div className="p-1 bg-less-light mt-2 rounded flex-col">
                 <TrackingInfo
                     icon={<NotificationsIcon fontSize="small" />}
                     title="Empty to Shipper"

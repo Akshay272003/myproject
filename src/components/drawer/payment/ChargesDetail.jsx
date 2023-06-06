@@ -2,7 +2,7 @@ const ChargesDetail = ({title, quantity, price}) => {
 
     return ( 
         <>
-            <div>
+            <div className="mt-half">
                 <div className="flex justify-content-between">
                     <span className="font-small font-dark">
                         {title}
