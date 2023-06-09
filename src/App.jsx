@@ -11,6 +11,7 @@ import DrawerHome from "./components/drawer/DrawerHome";
 // import Shipper from "./components/card_shipper/shipper/Shipper";
 import Shipper from "./components/Shipper/Shipper";
 import Profile from "./components/probehave/profile/Profile";
+import Card from "./components/probehave/module_card/Card";
 
 const App = () => {
   return ( 
@@ -33,6 +34,7 @@ const App = () => {
 
             {/* probehave */}
             <Route path="/probehave-profile" element={<Profile />} />
+            <Route path="/probehave-modulecard" element={<Card />} />
 
             {/* settings section  */}
             <Route path="/settings/account" element={<Account />} />
