@@ -8,19 +8,33 @@ import Account from "./components/content/account/Account";
 import Company from "./components/content/company/Company";
 import Referrals from "./components/content/referrals/Referrals";
 import DrawerHome from "./components/drawer/DrawerHome";
+// import Shipper from "./components/card_shipper/shipper/Shipper";
+import Shipper from "./components/Shipper/Shipper";
+import Profile from "./components/probehave/profile/Profile";
 
 const App = () => {
   return ( 
     <Router>
     <div className="main">
-      <div className="side-container">
+      {/* <div className="side-container">
         <Sidebar />
-      </div>
+      </div> */}
       <div className="content-container">
         <div className="">
           <Routes>
-            <Route path="/drawer" element={<DrawerHome />} />
             <Route path="/" element={<Notifications />} />
+
+            {/* drawer  */}
+            <Route path="/drawer" element={<DrawerHome />} />
+
+            {/* shipper card  */}
+            {/* <Route path="/shipper1" element={<Shipper />} /> */}
+            <Route path="/shipper" element={<Shipper />} />
+
+            {/* probehave */}
+            <Route path="/probehave-profile" element={<Profile />} />
+
+            {/* settings section  */}
             <Route path="/settings/account" element={<Account />} />
             <Route path="/settings/company" element={<Company />} />
             <Route path="/settings/subscription" element={<Subscription />} />

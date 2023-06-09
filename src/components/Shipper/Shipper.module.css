@@ -1,0 +1,116 @@
+.shipper {
+    background-color: var(--bg-light);
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+.shipperSection {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1.5em;
+    padding-top: 20px;
+}
+.shipperSection_search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search_container{
+    display: flex;
+    align-items: center;
+}
+.search_input{
+    border: none;
+    padding: 0.3em 0.6em;   
+    background-color: transparent;
+}
+.search_filter_buttons{
+    display: flex;
+}
+.shipperSection_tabs {
+    height: 100%;
+}
+
+.shipperAnalysis {
+    min-height: 100vh;
+    background-color: white;
+}
+.shipperAnalysis_target {
+    border-bottom: 1px solid var(--grey-light);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10px;
+}
+.shipperAnalysis_targetIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.shipperAnalysis_targetIntro span{
+    font-size: 0.6rem;
+    color: var(--grey-light);
+}
+.shipperAnalysis_targetGraph {
+    height: 180px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+      background: linear-gradient(
+    90deg,
+    rgba(35, 44, 96, 1) 0%,
+    rgba(17, 50, 145, 1) 100%
+  ) !important;
+    padding: 20px 10px;
+}
+.shipperAnalysis_targetGraph h3 {
+    color: var(--font-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 10px solid #f5f5f5;
+}
+.shipperAnalysis_targetGraph button {
+    width: 100%;
+    background-color: white !important;
+    color: black !important;
+    padding: 0;
+    margin-top: 0.8em;
+}
+.shipperAnalysis_targetNo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 10px;
+    align-items: center;
+}
+.shipperAnalysis_targetNo_box {
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.shipperAnalysis_targetNo_box_border{
+    width: 5px;
+    border-radius: 4px;
+    height: 20px;
+}
+.shipperAnalysis_targetNo_box h3 {
+    padding-left: 10px;
+}
+.shipperAnalysis_targetNo_box span {
+    color: var(--grey-light);
+    font-size: x-small;
+}
