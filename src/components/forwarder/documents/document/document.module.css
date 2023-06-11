@@ -1,0 +1,60 @@
+.hidden{
+    max-height: 0 !important;
+}
+.filter_dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0.5em;
+    max-height: 200px;
+    width: 100px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: max-height 0.5s ease-in;
+}
+.filter_options{
+    cursor: pointer;
+}
+.filter_options:hover{
+    background-color: var(--less-light);
+}
+.doc_card{
+    min-width: 230px;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all 0.3s ease-in-out;
+}
+.doc_card:hover{
+    background: rgb(245, 245, 245);
+    transform: scale(1.1);
+}
+.card_icon{
+    border-radius: 50%;
+    width: fit-content;
+}
+.card_icon img{
+    width: 30px;
+    height: 30px;
+}
+@media screen and (max-width:500px) {
+    .doc_card{
+        min-width: 100%;
+    }
+}
+
+.drag_drop_container{
+    border: 2px dashed lightblue;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.drag_drop_container:hover{
+    border-color: blue;
+}
+.file_upload_icon{
+    padding: 1em;
+    background-color: rgb(235, 235, 235);
+    border-radius: 50%;
+    transition: all 0.4s linear;
+}
+.file_upload_icon:hover{
+    transform: scale(1.1);
+}

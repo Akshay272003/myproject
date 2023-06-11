@@ -17,9 +17,9 @@ const Card = () => {
                     <img className={Style.card_img} src="src\assets\3.jpg" alt="" />
                 </div>
                 
-                    <p className={Style.card_title}>
-                        Good title good title good title good title
-                    </p>
+                <p className={Style.card_title}>
+                    Good title good title good title good title
+                </p>
                 
                 <p className={`${Style.desc}`}>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, est?
@@ -39,12 +39,9 @@ const Card = () => {
                         <span>
                             tags
                         </span>
-
                     </div>
                 </div>
-
             </div>
-
         </div>
      );
 }

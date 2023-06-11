@@ -1,0 +1,32 @@
+.hidden{
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0;
+}
+.filter{
+    max-height: 200vh;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+.route_input{
+    border: none;
+    padding: 0.3em 0.7em;
+    border-top: 1px soild blue;
+    background: var(--less-light);
+}
+.route_input:first-child{
+    border-bottom: 1px soild blue;
+    border-top: none;
+}
+.swap_btn{
+    position: absolute !important;
+    top: 50% !important;
+    right: -4% !important;
+    transform: translateY(-50%) !important;
+    background-color: rgba(255, 255, 255, 0.774) !important;
+    padding: none !important;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+}
+.shadow{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
