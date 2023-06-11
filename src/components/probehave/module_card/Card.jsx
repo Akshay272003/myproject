@@ -8,10 +8,7 @@ import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
 
 const Card = () => {
     return ( 
-        <div style={{display:'flex', justifyContent:'center', alignItems:'center', padding:'1em'}}>
-
             <div className={Style.card}>
-
                 {/* img container */}
                 <div>
                     <img className={Style.card_img} src="src\assets\3.jpg" alt="" />
@@ -42,7 +39,6 @@ const Card = () => {
                     </div>
                 </div>
             </div>
-        </div>
      );
 }
  

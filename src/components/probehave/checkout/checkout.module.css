@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background: white;
+    padding: 2em;
+    width: 65%;
+}
+.heading{
+    font-size: 30px;
+    font-weight: 700;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3em;
+}
+.payment_container{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    height: fit-content;
+    max-width: 400px;
+    border-radius: 12px;
+    border: 1px solid #B9B9B9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+}
+.price_container{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.offer_price{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2%;
+}
+.original_price{
+    font-size: 14px;
+    color: #626262;
+    text-decoration: line-through;
+}
+.payment_caption{
+    text-align: center;
+}
+.payment_caption span{
+    font-size: 13px;
+    color: #383838;
+}
+
+@media screen and (max-width:900px) {
+    .main{
+        width: 100%;
+    }
+    .heading{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .main{
+        width: 90%;
+    }
+}

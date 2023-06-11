@@ -16,7 +16,7 @@ import Documents from "./components/forwarder/documents/Documents";
 // import Profile from "./components/probehave/profile/Profile";
 // import Card from "./components/probehave/module_card/Card";
 import Popup from "./components/probehave/welcome_popup/Popup";
-
+import Checkout from "./components/probehave/checkout/Checkout";
 
 const App = () => {
   return ( 
@@ -56,6 +56,7 @@ const App = () => {
             <Route path="/probehave-profile" element={<Profile />} />
             <Route path="/probehave-modulecard" element={<Card />} /> */}
             <Route path="/probehave-popup" element={<Popup />} />
+            <Route path="/probehave-checkout" element={<Checkout />} />
           </Routes>
 
         </div>
