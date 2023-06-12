@@ -1,0 +1,22 @@
+.container{
+    width: 100vw;
+    min-height: 100vh;
+}
+.main{
+    border: 1px solid rgba(215, 213, 213, 0.84);
+    width: 100%;
+    max-width: 450px;
+    padding: 1em 0 3em 0;
+}
+@media screen and (min-width:668px) {
+    .main{
+        width: 50%;
+    }
+}
+.singup_btn{
+    background-color: #3c44b1 !important;
+    color: white !important;
+}
+.singup_btn:hover{
+    background-color: #5259c5 !important;
+}
