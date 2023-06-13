@@ -1,0 +1,27 @@
+.container{
+    min-height: 100%;
+    padding: 0.5em 2em 2em 2em;
+    position: relative;
+}
+.request_quote_btn{
+    background: #3c44b1 !important;
+    color: white !important;
+    border: none !important;
+}
+.request_quote_btn:hover{
+    background-color: #5259c5 !important;
+}
+.refresh_btn{
+    cursor: pointer;
+}
+.refresh_btn:hover{
+    color: blue;
+}
+.more_info_btn{
+    cursor: pointer;
+    color: blue;
+    font-size: 20px;
+}
+.more_info_btn:hover{
+    transform: scale(1.2);
+}

@@ -12,8 +12,11 @@ import Referrals from "./components/content/referrals/Referrals";
 import DrawerHome from "./components/drawer/DrawerHome";
 // import Shipper from "./components/card_shipper/shipper/Shipper";
 import Shipper from "./components/Shipper/Shipper";
+
+// forwareder
 import Dashboard from "./components/forwarder/dashboard/Dashboard";
 import Documents from "./components/forwarder/documents/Documents";
+import CustomQuotes from "./components/forwarder/dashboard/custom_quotes/CustomQuotes";
 
 // authntication
 import Signin from "./components/authenticate/signin/Signin";
@@ -25,8 +28,8 @@ import SignupSuccess from "./components/authenticate/signup/signup_success/Signu
 // prbehave
 // import Profile from "./components/probehave/profile/Profile";
 // import Card from "./components/probehave/module_card/Card";
-import Popup from "./components/probehave/welcome_popup/Popup";
-import Checkout from "./components/probehave/checkout/Checkout";
+// import Popup from "./components/probehave/welcome_popup/Popup";
+// import Checkout from "./components/probehave/checkout/Checkout";
 
 const App = () => {
   return ( 
@@ -48,32 +51,36 @@ const App = () => {
             <Route path="signup-success" element={<SignupSuccess />} />
 
 
-            {/* drawer  */}
-            <Route path="/drawer" element={<DrawerHome />} />
+            
 
             {/* shipper card  */}
             {/* <Route path="/shipper1" element={<Shipper />} /> */}
-            <Route path="/shipper" element={<Shipper />} />
+            {/* <Route path="/shipper" element={<Shipper />} /> */}
 
             {/* forwarder  */}
             <Route path="/forwarder-dashboard" element={<Dashboard />} />
             <Route path="/forwarder-documents" element={<Documents />} />
+            <Route path="/forwarder-custom-quotes" element={<CustomQuotes />} />
 
             {/* settings section  */}
-            <Route path="/settings/account" element={<Account />} />
+            {/* <Route path="/settings/account" element={<Account />} />
             <Route path="/settings/company" element={<Company />} />
             <Route path="/settings/subscription" element={<Subscription />} />
             <Route path="/settings/security-setting" element={<SecuritySetting />} />
             <Route path="/settings/referrals" element={<Referrals />} />
             <Route path="/settings/notifications" element={<Notifications />} />
-            <Route path="/settings/preferences" element={<Preferences />} />
+            <Route path="/settings/preferences" element={<Preferences />} /> */}
 
 
             {/* probehave --------------------------
             <Route path="/probehave-profile" element={<Profile />} />
-            <Route path="/probehave-modulecard" element={<Card />} /> */}
+            <Route path="/probehave-modulecard" element={<Card />} />
             <Route path="/probehave-popup" element={<Popup />} />
-            <Route path="/probehave-checkout" element={<Checkout />} />
+            <Route path="/probehave-checkout" element={<Checkout />} /> */}
+
+            {/* not in use */}
+            {/* drawer  */}
+            <Route path="/drawer" element={<DrawerHome />} />
           </Routes>
 
         </div>
