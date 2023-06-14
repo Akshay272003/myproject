@@ -9,6 +9,7 @@ import FilterListIcon from '@mui/icons-material/FilterList';
 import LoopIcon from '@mui/icons-material/Loop';
 import GridOnIcon from '@mui/icons-material/GridOn';
 import ViewComfyIcon from '@mui/icons-material/ViewComfy';
+import {Progress} from "antd";
 
 const Shipper = () => {
     return (
@@ -55,14 +56,20 @@ const Shipper = () => {
                     </div>
                 </div>
 
+                {/* target analysis */}
                 <div className={Style.shipperAnalysis}>
                     <div className={Style.shipperAnalysis_target}>
                         <div className={Style.shipperAnalysis_targetIntro}>
-                            <h5>Today's Shipment Target</h5>
+                            <h3>Today's Shipment Target</h3>
                             <span style={{ textAlign: 'center' }} >Daily statistics regarding your shipment targets</span>
                         </div>
                         <div className={Style.shipperAnalysis_targetGraph}>
-                            <h3>63%</h3>
+                            <Progress 
+                                className={Style.progress_percent}
+                                strokeColor="white"
+                                trailColor="gray"
+                                strokeLinecap="butt" 
+                                type="dashboard" percent={63} />
                             <Button variant="outlined">Generate Report</Button>
                         </div>
 
@@ -73,7 +80,7 @@ const Shipper = () => {
                                     <div
                                         style={{ backgroundColor: 'lightblue' }}
                                         className={`${Style.shipperAnalysis_targetNo_box_border}`}></div>
-                                    <h3>5</h3>
+                                    <h2>5</h2>
                                 </div>
                             </div>
 
@@ -83,7 +90,7 @@ const Shipper = () => {
                                     <div
                                         style={{ backgroundColor: 'lightgreen' }}
                                         className={`${Style.shipperAnalysis_targetNo_box_border}`}></div>
-                                    <h3>298</h3>
+                                    <h2>298</h2>
                                 </div>
                             </div>
 
@@ -93,7 +100,7 @@ const Shipper = () => {
                                     <div
                                         style={{ backgroundColor: 'lightcoral' }}
                                         className={`${Style.shipperAnalysis_targetNo_box_border}`}></div>
-                                    <h3 >12</h3>
+                                    <h2>12</h2>
                                 </div>
                             </div>
 
@@ -103,7 +110,7 @@ const Shipper = () => {
                                     <div
                                         style={{ backgroundColor: 'lightblue' }}
                                         className={`${Style.shipperAnalysis_targetNo_box_border}`}></div>
-                                    <h3>31</h3>
+                                    <h2>31</h2>
                                 </div>
                             </div>
                         </div>

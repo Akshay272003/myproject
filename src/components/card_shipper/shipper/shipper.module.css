@@ -35,29 +35,31 @@
   
   .shipperDashboard_numbers {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 2em;
   }
   
   .shipperDashboard_numbersBox {
+    flex: 1;
     color: white;
-    /* padding: 20px; */
-    padding: 1em;
+    padding: 1.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     height: 100%;
-    width: 23%;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
+    cursor: pointer;
+    transition: scale 0.1s linear;
+  }
+  .shipperDashboard_numbersBox:hover{
+    scale: 1.05;
   }
   .shipperDashboard_numbersBox:nth-child(1) {
-    background: linear-gradient(
-      90deg,
-      rgba(35, 44, 96, 1) 0%,
-      rgba(17, 50, 145, 1) 100%
-    ) !important;
+    background: linear-gradient(90deg,rgba(35, 44, 96, 1) 0%,rgba(17, 50, 145, 1) 100%) !important;
   }
   .shipperDashboard_numbersBox:nth-child(2) {
   background: linear-gradient(90deg, rgba(68,182,131,1) 0%, rgba(119,194,91,1) 100%);
@@ -69,10 +71,11 @@
   background: linear-gradient(90deg, rgba(250,185,119,1) 0%, rgba(248,204,107,1) 100%);
   }
   .shipperDashboard_numbersBox_icon{
-    padding: 5px !important;
-    background-color: #536c6f !important;
+    padding: 6px !important;
+    background-color: #ffffff3d !important;
     border-radius: 50% !important;
     color: white !important;
+    font-size: 2.5em !important;
   }
   
   .shipperDashboard_body {
@@ -91,7 +94,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     padding: 5px;
   }
   

@@ -1,7 +1,10 @@
 import Style from "./shipper.module.css"
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import PauseIcon from '@mui/icons-material/Pause';
+import WarningIcon from '@mui/icons-material/Warning';
 import Card from "../card/Card";
 import WidgetsIcon from '@mui/icons-material/Widgets';
+import SendIcon from '@mui/icons-material/Send';
 import TopButton from "./TopButton";
 
 const Shipper = () => {
@@ -16,18 +19,18 @@ const Shipper = () => {
                     />
                     <TopButton
                         title="Total shipments"
-                        value="156"
-                        icon={<WidgetsIcon className={`${Style.shipperDashboard_numbersBox_icon}`} />}
+                        value="54"
+                        icon={<SendIcon className={`${Style.shipperDashboard_numbersBox_icon}`} />}
                     />
                     <TopButton
                         title="Total shipments"
-                        value="156"
-                        icon={<WidgetsIcon className={`${Style.shipperDashboard_numbersBox_icon}`} />}
+                        value="10"
+                        icon={<WarningIcon className={`${Style.shipperDashboard_numbersBox_icon}`} />}
                     />
                     <TopButton
                         title="Total shipments"
-                        value="156"
-                        icon={<WidgetsIcon className={`${Style.shipperDashboard_numbersBox_icon}`} />}
+                        value="5"
+                        icon={<PauseIcon className={`${Style.shipperDashboard_numbersBox_icon}`} />}
                     />
                 </div>
 

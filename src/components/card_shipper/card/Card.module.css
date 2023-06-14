@@ -4,10 +4,15 @@
   padding: 10px;
   border-radius: 10px;
   gap: 1em;
-  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px; */
-    width: 100%;
-    background-color: white;
+  width: 100%;
+  background-color: white;
+  transition: all 0.1s ease-in-out ;
+  cursor: pointer;
+}
+.card:hover{
+  scale: 1.03;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: #e7f0ff;
 }
 .card_one, .card_two, .card_three{
   display: flex;
@@ -15,7 +20,15 @@
   align-items: center;
 }
 .card_one span{
-  font-size: 0.6rem;
+  font-size: 0.8rem;
+}
+.view_details_btn{
+  display: flex;
+  gap: 0.5em;
+  cursor: pointer;
+}
+.card:hover .view_details_btn{
+  color: blue;
 }
 .progress{
   overflow-x: hidden;

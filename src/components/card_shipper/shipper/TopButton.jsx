@@ -8,11 +8,11 @@ const TopButton = ({ value, title, icon }) => {
 
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
 
-                    <span style={{fontSize:'0.7rem'}}>{title}</span>
+                    <span style={{fontSize:'0.9rem'}}>{title}</span>
 
                     <div style={{ display: 'flex', gap: "10px", alignItems: 'center', marginTop: '0.4em' }} >
                         {icon}
-                        <p style={{fontSize:'1.3rem'}}>{value}</p>
+                        <span style={{fontSize:'2.3rem', fontWeight:'700'}}>{value}</span>
                     </div>
 
                 </div>

@@ -11,7 +11,7 @@ const Card = ({ Mode, PlateNo, RecieptNo, Status, Source, Destination, StatusCol
 
                 <div className={Style.card_one}>
                     <span>{PlateNo}</span>
-                    <span style={{ display: 'flex', alignItems: 'center', color: '#9aa7ad' }}  >View Details
+                    <span className={`${Style.view_details_btn}`}>View Details
                         <ArrowForwardIosIcon style={{ fontSize: '0.7rem' }} />
                     </span>
                 </div>

@@ -10,6 +10,7 @@ import Account from "./components/content/account/Account";
 import Company from "./components/content/company/Company";
 import Referrals from "./components/content/referrals/Referrals";
 import DrawerHome from "./components/drawer/DrawerHome";
+
 // import Shipper from "./components/card_shipper/shipper/Shipper";
 import Shipper from "./components/Shipper/Shipper";
 
@@ -55,7 +56,7 @@ const App = () => {
 
             {/* shipper card  */}
             {/* <Route path="/shipper1" element={<Shipper />} /> */}
-            {/* <Route path="/shipper" element={<Shipper />} /> */}
+            <Route path="/shipper" element={<Shipper />} />
 
             {/* forwarder  */}
             <Route path="/forwarder-dashboard" element={<Dashboard />} />
