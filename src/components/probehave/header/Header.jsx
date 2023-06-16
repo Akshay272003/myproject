@@ -112,6 +112,12 @@ const Header = () => {
                         </a>
                     </Dropdown>
                     <a href="#"><span className={`${Style.nav_link}`}>Pricing</span></a>
+                    <Button className={`${Style.login_btn}`}>
+                        Log in
+                    </Button>
+                    <Button className={`${Style.signup_btn}`}>
+                        Sign up
+                    </Button>
                 </div>
             </div>
 
