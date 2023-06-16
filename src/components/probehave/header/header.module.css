@@ -1,0 +1,85 @@
+.nav_bar{
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    background: white;
+    align-items: center;
+}
+.right_container{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.brand_container{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+.mobile_header{
+    display: none;
+}
+.nav_links{
+    margin-left: 2em;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+.nav_link{
+    font-size: 0.8rem;
+    color: rgb(102, 101, 101);
+}
+.nav_dropdown{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+.user_actions{
+    display: flex;
+    gap: 0.5em;
+}
+.login_btn{
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    color: rgb(99, 99, 99) !important;
+}
+.login_btn:hover{
+    background-color:#db59ca !important;
+    color: white !important;  
+}
+.signup_btn{
+    background: #db59ca !important;
+    color: white !important;
+    border: none !important;
+}
+.signup_btn:hover{
+    scale: 1.1;
+}
+.dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: white;
+    border-radius: 12px;
+    padding: 2em;
+    right: -9px;
+    top: 3.2em;
+    overflow: hidden;
+    max-height: 1000px;
+    transition: max-height 0.3s ease-in-out;
+}
+.hide_dropdown{
+    max-height: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:700px) {
+    .desktop_header{
+        display: none !important;
+    }
+    .mobile_header{
+        display: flex;
+        position: relative;
+    }
+}
