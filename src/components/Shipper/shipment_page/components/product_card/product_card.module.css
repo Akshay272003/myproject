@@ -1,0 +1,15 @@
+.product_card{
+    margin: 2em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.product_price{
+    border-left: 1px solid #73788E;
+}
+.more_product_details{
+    max-height: 1500px;
+    overflow: hidden;
+    transition: max-height 0.3s linear;
+}
+.hidden{
+    max-height: 0;
+}

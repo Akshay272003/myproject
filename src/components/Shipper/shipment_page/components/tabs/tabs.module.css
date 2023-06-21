@@ -1,0 +1,10 @@
+.container{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.tabs{
+    width: 100%;
+    justify-content: center !important;
+}
+.tabs div div{
+    justify-content: space-evenly;
+}

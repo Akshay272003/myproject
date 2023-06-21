@@ -1,0 +1,18 @@
+.blue_circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3B44B1;
+    position: relative;
+    margin-top: 6px;
+}
+.is_from::after{
+    content: "";
+    top: 7px;
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background-color: #3B44B1;
+    left: 50%;
+    transform: translateX(-50%);
+}

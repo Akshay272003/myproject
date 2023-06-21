@@ -25,6 +25,7 @@ const items = [
     }
 ]
 
+// main header component 
 const Header = () => {
 
     const toggleDropdown = () => {
@@ -38,7 +39,7 @@ const Header = () => {
             <div className={`${Style.right_container}`}>
 
                 <div className={`${Style.brand_container}`}>
-                    {/* logo here */}
+                    {/* logo here0----------------- */}
                     <img src="#" style={{ width: '30px', height: '30px' }} />
                     <h2 style={{ margin: '0' }}>Probehave</h2>
                 </div>

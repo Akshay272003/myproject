@@ -1,0 +1,16 @@
+.container{
+    width: 268px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.option_container{
+    background-color: #f2f7fe;
+}
+
+.filter_by{
+    max-height: 200px;
+    transition: max-height 0.2s linear;
+}
+.hidden{
+    max-height: 0;
+}

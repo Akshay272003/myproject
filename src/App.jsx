@@ -31,7 +31,9 @@ import SignupSuccess from "./components/authenticate/signup/signup_success/Signu
 // import Card from "./components/probehave/module_card/Card";
 // import Popup from "./components/probehave/welcome_popup/Popup";
 // import Checkout from "./components/probehave/checkout/Checkout";
-import Header from "./components/probehave/header/Header";
+// import Header from "./components/probehave/header/Header";
+
+import ShipmentHome from "./components/Shipper/shipment_page/ShipmentHome";
 
 const App = () => {
   return (
@@ -59,10 +61,13 @@ const App = () => {
               {/* <Route path="/shipper1" element={<Shipper />} /> */}
               <Route path="/shipper" element={<Shipper />} />
 
+              {/* shipment page  */}
+              <Route path="/shipment" element={<ShipmentHome />} />
+
               {/* forwarder  */}
-              <Route path="/forwarder-dashboard" element={<Dashboard />} />
+              {/* <Route path="/forwarder-dashboard" element={<Dashboard />} />
               <Route path="/forwarder-documents" element={<Documents />} />
-              <Route path="/forwarder-custom-quotes" element={<CustomQuotes />} />
+              <Route path="/forwarder-custom-quotes" element={<CustomQuotes />} /> */}
 
               {/* settings section  */}
               {/* <Route path="/settings/account" element={<Account />} />
@@ -78,12 +83,12 @@ const App = () => {
             <Route path="/probehave-profile" element={<Profile />} />
             <Route path="/probehave-modulecard" element={<Card />} />
             <Route path="/probehave-popup" element={<Popup />} />
-            <Route path="/probehave-checkout" element={<Checkout />} /> */}
-              <Route path="/probehave-header" element={<Header />} />
+            <Route path="/probehave-checkout" element={<Checkout />} /> 
+              <Route path="/probehave-header" element={<Header />} />*/}
 
               {/* not in use */}
               {/* drawer  */}
-              <Route path="/drawer" element={<DrawerHome />} />
+              {/* <Route path="/drawer" element={<DrawerHome />} /> */}
             </Routes>
 
           </div>

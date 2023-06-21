@@ -1,0 +1,12 @@
+.company_name{
+    font-size: 28px;
+    font-weight: 500;
+    color: #252525;
+}
+.deals_with_us{
+    padding: 0.3em 0.6em;
+    background: rgba(59, 68, 177, 0.05);
+    color: #3B44B1;
+    border: 1.34615px solid #3B44B1;
+    border-radius: 5.38462px;
+}
