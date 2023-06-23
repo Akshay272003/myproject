@@ -1,10 +1,40 @@
 .container{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.tabs{
-    width: 100%;
-    justify-content: center !important;
-}
-.tabs div div{
     justify-content: space-evenly;
+}
+.btn{
+    padding: 0.7em 1.2em;
+    border: none;
+    background-color: transparent;
+    border-radius: 6.2px;
+    cursor: pointer;
+    position: relative;
+}
+.btn_background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 6.2px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    scale: 0;
+    background-color: #3B44B1;
+    transition: scale 0.2s ease-out;
+}
+.btn:hover .btn_background{
+    scale: 1;
+}
+.btn span{
+    font-size: 14px;
+    position: relative;
+    z-index: 5;
+    transition: color 0.2s ease-out;
+}
+.btn:hover span{
+    color: white;
+}
+.active{
+    background-color: #3B44B1;
+    color: white;
 }

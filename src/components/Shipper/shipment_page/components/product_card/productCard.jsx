@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Style from "./product_card.module.css";
-import FromTo from "./from_to/FromTo";
+import FromTo from "../../../reusables/from_to/FromTo";
 import { Rating, IconButton, Button, Divider } from "@mui/material";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
@@ -27,7 +27,7 @@ const ProductCard = ({ id }) => {
 
             <div className={`flex flex-wrap gap-1`}>
 
-                <div className={`bg-less-light p-1 rounded flex-col`} style={{ gap: '0.3em', height: 'fit-content' }}>
+                <div className={`p-1 rounded flex-col`} style={{ gap: '0.3em', height: 'fit-content', background: '#F8F9FF' }}>
                     <span className="font-dark font-title">Route</span>
                     <FromTo
                         title="PLACE OF LOADING"
@@ -92,7 +92,6 @@ const ProductCard = ({ id }) => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 }

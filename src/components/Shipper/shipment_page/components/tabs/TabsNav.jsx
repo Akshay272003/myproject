@@ -1,59 +1,36 @@
 import { useState } from 'react';
-import { Tab, Tabs } from "@mui/material";
 import Style from "./tabs.module.css";
-
-function TabPanel(props) {
-    const { children, value, index, ...other } = props;
-
-    return (
-        <div
-            role="tabpanel"
-            hidden={value !== index}
-            id={`simple-tabpanel-${index}`}
-            aria-labelledby={`simple-tab-${index}`}
-            {...other}
-        >
-            {value === index && (
-                <div>
-                    {children}
-                </div>
-            )}
-        </div>
-    );
-}
-
 
 
 const TabsNav = () => {
-    const [value, setValue] = useState(0);
-
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
+    const [value, setValue] = useState(1);
 
     return (
         <>
-            <div className={`flex justify-content-center bg-light p-half rounded ${Style.container}`}>
-                <Tabs
-                    className={Style.tabs}
-                    value={value}
-                    onChange={handleChange}
-                    aria-label="Sort"
+            <div className={`flex bg-light p-half rounded ${Style.container}`}>
+                {/* button group */}
+                <button
+                    onClick={() => setValue(1)}
+                    className={value === 1 ? `${Style.btn} ${Style.active}` : Style.btn}
                 >
-                    <Tab label="Cheapest" />
-                    <Tab label="Best Value" />
-                    <Tab label="Quickest" />
-                </Tabs>
+                    <div className={Style.btn_background}></div>
+                    <span>Cheapest</span>
+                </button>
+                <button
+                    onClick={() => setValue(2)}
+                    className={value === 2 ? `${Style.btn} ${Style.active}` : Style.btn}
+                >
+                    <div className={Style.btn_background}></div>
+                    <span>Best Value</span>
+                </button>
+                <button
+                    onClick={() => setValue(3)}
+                    className={value === 3 ? `${Style.btn} ${Style.active}` : Style.btn}
+                >
+                    <div className={Style.btn_background}></div>
+                    <span>Quickest</span>
+                </button>
             </div>
-            {/* <TabPanel value={value} index={0}>
-                Item One
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-                Item Two
-            </TabPanel>
-            <TabPanel value={value} index={2}>
-                Item Three
-            </TabPanel> */}
         </>
     );
 }
