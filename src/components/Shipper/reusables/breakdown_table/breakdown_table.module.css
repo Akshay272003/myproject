@@ -1,0 +1,19 @@
+.container {
+    overflow-x: auto;
+}
+
+.heading {
+    font-size: clamp(14px, 2.5vw, 27px);
+}
+
+.logo {
+    width: clamp(70px, 10vw, 130px);
+}
+
+.cell_data {
+    font-size: clamp(0.5rem, 1vw, 0.7rem);
+}
+
+.sub_total {
+    font-size: clamp(11px, 2.5vw, 14px);
+}

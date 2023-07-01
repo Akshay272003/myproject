@@ -1,0 +1,32 @@
+.title {
+    color: #A7A5BB;
+    font-size: clamp(1rem, 2.5vw, 22px);
+    font-weight: 500;
+}
+
+.head_icon {
+    width: clamp(1rem, 2.5vw, 22px);
+    height: fit-content;
+}
+
+.detail_box {
+    /* transform: scaleY(1);
+    transform-origin: top;
+    overflow: hidden;
+    transition: transform 0.15s linear; */
+
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+
+
+}
+
+/* .hidden {
+    transform: scaleY(0);
+} */
+
+.innerBox {
+    padding: 2em 1em;
+    background-color: rgba(68, 49, 184, 0.05);
+}

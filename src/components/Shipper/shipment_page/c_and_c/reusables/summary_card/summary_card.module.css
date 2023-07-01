@@ -1,0 +1,45 @@
+.summary_card:not(:first-child) {
+    margin-top: 1em;
+}
+
+.title {
+    color: #444;
+    font-size: clamp(18px, 2.5vw, 22px);
+    font-weight: 500;
+}
+
+.key_label {
+    color: #434649;
+    font-size: clamp(13px, 2.5vw, 16px);
+    font-weight: 500;
+    flex-basis: 20%;
+}
+
+@media screen and (max-width:1100px) {
+    .key_label {
+        flex-basis: 30%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .key_label {
+        flex-basis: 50%;
+    }
+}
+
+
+.key_value {
+    color: #5A6470;
+    font-size: clamp(12px, 2.5vw, 15px);
+}
+
+.summary_img {
+    height: 156px;
+    width: 233px;
+}
+
+@media screen and (max-width:600px) {
+    .summary_img {
+        height: 100px;
+    }
+}

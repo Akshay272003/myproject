@@ -1,0 +1,51 @@
+.card {
+    background-color: white;
+    width: 45%;
+}
+
+@media screen and (max-width:1000px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.card_header {
+    padding: 1em 1.5em;
+    background: rgba(68, 49, 184, 0.08);
+}
+
+.card_title {
+    color: #252525;
+    font-size: clamp(14px, 2.5vw, 17.415px);
+    font-weight: 500;
+}
+
+.required_status {
+    color: #FD3246;
+    font-size: 7.74px;
+    padding: 3.87px 10.643px;
+    border-radius: 7.74px;
+    background: rgba(253, 50, 70, 0.18);
+}
+
+.add_button {
+    width: clamp(15px, 2.5vw, 25px);
+    aspect-ratio: 1/1;
+
+    background-color: rgba(68, 49, 184, 1) !important;
+}
+
+.card_desc {
+    color: #5A6470;
+    font-size: clamp(10px, 2.5vw, 13.545px);
+}
+
+.learn_more {
+    color: #4431B8;
+    font-size: 13.545px;
+    font-weight: 600;
+}
+
+.learn_more:hover {
+    color: #5c46ed;
+}

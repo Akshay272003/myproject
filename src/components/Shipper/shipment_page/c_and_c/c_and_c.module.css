@@ -1,0 +1,14 @@
+.heading {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-weight: 500;
+    color: #444;
+}
+
+.heading_id {
+    color: #5A6470;
+    font-size: clamp(10px, 2.5vw, 14px);
+}
+
+.tabs div:last-child>div {
+    position: static !important;
+}

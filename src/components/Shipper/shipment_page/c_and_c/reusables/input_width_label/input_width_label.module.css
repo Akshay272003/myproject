@@ -1,0 +1,21 @@
+.input {
+    width: 100% !important;
+    border-radius: 2.359px !important;
+    border: 0.649px solid #8F8F8F !important;
+    padding: 8px !important;
+}
+
+.input::placeholder {
+    color: #5A6470;
+    font-size: 11.134px;
+}
+
+.label {
+    color: #313131;
+    font-size: 11.795px;
+}
+
+.optional {
+    color: #797979;
+
+}

@@ -1,0 +1,37 @@
+/* .dialog_box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+
+.dialog_box::backdrop {
+    background-color: #00000085;
+} */
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000085;
+    z-index: 1;
+}
+
+.close {
+    display: none;
+}
+
+.container>div {
+    width: 50%;
+}
+
+@media screen and (max-width:700px) {
+    .container>div {
+        width: 90%;
+    }
+}

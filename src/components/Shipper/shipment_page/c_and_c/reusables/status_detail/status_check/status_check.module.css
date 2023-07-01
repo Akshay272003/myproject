@@ -1,0 +1,15 @@
+.check_circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.checked {
+    background-color: greenyellow;
+}
+
+.label {
+    color: #5A6470;
+    font-size: 14px;
+}

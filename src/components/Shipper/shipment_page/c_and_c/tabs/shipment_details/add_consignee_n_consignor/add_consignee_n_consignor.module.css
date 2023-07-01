@@ -1,0 +1,42 @@
+.header {
+    color: #444;
+    font-size: 19.207px;
+    font-weight: 500;
+    padding: 1em;
+    background: rgba(68, 49, 184, 0.08);
+}
+
+.input {
+    width: 100%;
+    border-radius: 2.359px !important;
+    border: 0.8px solid #DEDEDE !important;
+    padding: 8px !important;
+}
+
+.input::placeholder {
+    color: #5A6470;
+    font-size: 11.134px;
+}
+
+.form_item {
+    max-width: 340px;
+    min-width: 130px;
+}
+
+.form_item label,
+.full_width_inp label {
+    color: #313131 !important;
+    font-size: 11.795px !important;
+}
+
+.phone_number {
+    width: 100% !important;
+    padding: 2.5px 0px !important;
+    border-radius: 2.359px !important;
+}
+
+.learn_more {
+    color: #6D5EC5 !important;
+    font-size: 12.986px !important;
+    font-weight: 500 !important;
+}

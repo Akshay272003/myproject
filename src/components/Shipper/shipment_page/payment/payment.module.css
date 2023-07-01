@@ -1,0 +1,23 @@
+.container {
+    border-radius: 2px;
+    border: 1px solid #DFDFDF;
+    background: #FFF;
+    box-shadow: 0px 0px 0px 0px rgba(158, 158, 158, 0.10), 0px 8px 18px 0px rgba(158, 158, 158, 0.10), 0px 73px 44px 0px rgba(158, 158, 158, 0.05), 0px 130px 52px 0px rgba(158, 158, 158, 0.01);
+}
+
+.heading_container {
+    padding: 1em clamp(1em, 3vw, 2em);
+    background: rgba(68, 49, 184, 0.08);
+}
+
+.heading {
+    color: #252525;
+    font-size: clamp(14px, 2.5vw, 18px);
+    font-weight: 500;
+}
+
+.heading_helper {
+    color: #4431B8;
+    font-size: clamp(12px, 2vw, 15px);
+    font-weight: 500;
+}

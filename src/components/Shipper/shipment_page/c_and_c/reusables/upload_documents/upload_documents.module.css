@@ -1,0 +1,46 @@
+.card {
+    background-color: white;
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card_header {
+    padding: 1em 1.5em;
+    background: rgba(68, 49, 184, 0.08);
+}
+
+.card_title {
+    color: #252525;
+    font-size: clamp(14px, 2.5vw, 17.415px);
+    font-weight: 500;
+}
+
+.card_desc {
+    color: #5A6470;
+    font-size: clamp(10px, 2.5vw, 13.545px);
+    line-height: 150%;
+}
+
+.learn_more {
+    color: #4431B8;
+    font-size: clamp(10px, 2.5vw, 13.545px);
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.learn_more:hover {
+    color: #5c46ed;
+}
+
+.menu_item {
+    color: #1890FF !important;
+    font-size: 14px !important;
+}
+
+.menu_item:hover {
+    background-color: #E6F7FF !important;
+}
+
+.upload>div>div {
+    width: 100% !important;
+}

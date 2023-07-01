@@ -1,16 +1,21 @@
-.container{
+.container {
     width: 268px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.option_container{
+/* .slider_tooltip {
+    background-color: rgba(68, 49, 184, 0.06) !important;
+} */
+
+.option_container {
     background-color: #f2f7fe;
 }
 
-.filter_by{
+.filter_by {
     max-height: 200px;
     transition: max-height 0.2s linear;
 }
-.hidden{
+
+.hidden {
     max-height: 0;
 }

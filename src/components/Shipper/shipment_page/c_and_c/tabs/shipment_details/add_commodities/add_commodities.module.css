@@ -1,0 +1,33 @@
+.heading {
+    color: #424040;
+    font-size: clamp(18px, 2.5vw, 22px);
+    font-weight: 600;
+}
+
+.close_btn {
+    width: 29.005px !important;
+    height: 29.005px !important;
+    background-color: #F0F0F0 !important;
+    border-radius: 7px !important;
+    position: absolute !important;
+    left: -1.3em !important;
+    top: 0 !important;
+}
+
+.label {
+    color: #313131;
+    font-size: 11.795px;
+}
+
+.optional {
+    color: #797979;
+    font-size: 11.795px;
+}
+
+.upload>div>div {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 2.359px !important;
+    border: 0.649px solid #CDCDCD !important;
+    background: #FAFAFA !important;
+}

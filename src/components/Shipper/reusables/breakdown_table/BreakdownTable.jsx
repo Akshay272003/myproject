@@ -1,19 +1,19 @@
 
-import Style from "./price_breakdown.module.css";
 import { Divider } from "@mui/material";
+import Style from "./breakdown_table.module.css";
 
 const BreakdownTable = ({ heading, logo, tableHeaders, tableData, headIcon }) => {
     return (
-        <div className={`flex-col gap-half`}>
+        <div className={`flex-col gap-half ${Style.container}`}>
             <div className="flex gap-1 justify-content-between items-center">
-                <h3 className="font-dark flex items-center gap-half">{headIcon} {heading}</h3>
-                <img src={logo} />
+                <h3 className={`${Style.heading} font-dark flex items-center gap-half`}>{headIcon} {heading}</h3>
+                <img src={logo} className={Style.logo} />
             </div>
             <Divider />
             {/* table headers  */}
             <div className="flex gap-1">
                 {tableHeaders && tableHeaders.map((header, i) => (
-                    <div key={i} className="font-small font-dark flex-1">{header}</div>
+                    <div key={i} className={`${Style.cell_data} font-dark flex-1`}>{header}</div>
                 ))}
             </div>
             <Divider />
@@ -24,7 +24,7 @@ const BreakdownTable = ({ heading, logo, tableHeaders, tableData, headIcon }) =>
                     <div className="flex gap-1 py-half">
                         {row.map((data, i) => (
                             <div key={i} className="w-full">
-                                <div className="font-small font-light flex-1">{data}</div>
+                                <div className={`${Style.cell_data} flex-1`}>{data}</div>
                             </div>
                         ))}
                     </div>
@@ -32,7 +32,7 @@ const BreakdownTable = ({ heading, logo, tableHeaders, tableData, headIcon }) =>
                 </div>
             ))}
             <div className="flex justify-content-end">
-                <h5>Subtotal USD 14.20</h5>
+                <h5 className={Style.sub_total}>Subtotal USD 14.20</h5>
             </div>
         </div>
     );

@@ -1,0 +1,31 @@
+.container {
+    position: fixed;
+    height: 100vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    top: 0;
+    right: 0;
+    max-width: 552px;
+    width: 60%;
+    transition: all 0.3s linear;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+@media screen and (max-width:650px) {
+    .container {
+        max-width: 90%;
+        width: 90%;
+    }
+}
+
+.container>div> {
+    position: fixed !important;
+    width: 100%;
+    z-index: 5;
+    overflow-y: auto;
+}
+
+.hidden {
+    max-width: 0;
+    overflow: hidden;
+}

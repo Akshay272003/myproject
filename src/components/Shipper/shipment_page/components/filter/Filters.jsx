@@ -1,20 +1,14 @@
 import { useState } from "react";
 import Style from "./filter.module.css";
-import { Divider, Slider, Button } from "@mui/material";
+import { Divider, Button } from "@mui/material";
+import { Slider } from "antd";
 import DropdownOptions from "./DropdownOptions";
-
-function valuetext(value) {
-    return `$ ${value}`;
-}
 
 
 const Filters = () => {
 
-    const [value, setValue] = useState([20, 37]);
-
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
+    // const formatter = (value) => <span style={{ color: '#4431B8' }}>$ {value}</span>;
+    const formatter = (value) => `$ ${value}`;
 
     return (
         <div className={`flex-col p-1 gap-1 bg-light rounded ${Style.container}`}>
@@ -30,19 +24,19 @@ const Filters = () => {
                 <span className="font-light">
                     Price
                 </span>
-                <div style={{ padding: '0 7px' }}>
-                    <Slider
-                        size="small"
-                        getAriaLabel={() => 'Temperature range'}
-                        value={value}
-                        onChange={handleChange}
-                        valueLabelDisplay="auto"
-                        getAriaValueText={valuetext}
-                    />
-                </div>
+                {/* slider  */}
+                <Slider
+                    range
+                    defaultValue={[0, 1500]}
+                    className={Style.slider}
+                    tooltip={{
+                        formatter,
+                    }}
+                />
+
                 <div className="flex justify-content-between">
                     <span className="font-small font-dark">$ 1000</span>
-                    <span className="font-small font-dark">$ 1000</span>
+                    <span className="font-small font-dark">$ 2000</span>
                 </div>
             </div>
 

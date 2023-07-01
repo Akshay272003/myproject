@@ -1,0 +1,21 @@
+.status_card {
+    background-color: rgba(68, 49, 184, 0.05);
+    border-radius: 6px;
+}
+
+.status_number_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 500;
+    border-radius: 6px;
+    background: rgba(68, 49, 184, 0.75);
+    padding: 1em;
+}
+
+.status_detail {
+    height: 100%;
+    flex: 1;
+}

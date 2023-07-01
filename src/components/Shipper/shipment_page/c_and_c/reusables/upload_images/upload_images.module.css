@@ -1,0 +1,20 @@
+.card {
+    background-color: white;
+    width: 100%;
+}
+
+.card_header {
+    padding: 1em 1.5em;
+    background: rgba(68, 49, 184, 0.08);
+}
+
+.card_title {
+    color: #252525;
+    font-size: clamp(14px, 2.5vw, 17.415px);
+    font-weight: 500;
+}
+
+.card_desc {
+    color: #5A6470;
+    font-size: clamp(10px, 2.5vw, 14px);
+}

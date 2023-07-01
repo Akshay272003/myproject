@@ -1,0 +1,28 @@
+.heading {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 1.5em;
+}
+
+.description {
+    background: rgba(68, 49, 184, 0.08);
+    padding: 1em 2em;
+    color: #4431B8;
+    font-size: 13.225px;
+}
+
+.form {
+    padding: 1em 3em;
+}
+
+@media screen and (max-width:668px) {
+    .form {
+        padding: 1em;
+    }
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+}
