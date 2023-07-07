@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.main_container {
+    width: 95%;
+    padding: 2em 1em;
+}
+
+.form_container {
+    padding: 0 2em;
+}
+
+@media screen and (max-width:750px) {
+    .main_container {
+        width: 100%;
+    }
+
+    .form_container {
+        padding: 0 1em;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .flex_container {
+        flex-direction: column;
+    }
+}
+
+
+.brand_name {
+    color: #06113C;
+    font-size: clamp(20px, 3vw, 25px);
+}
+
+.heading {
+    font-weight: 700;
+    color: #252525;
+    font-size: clamp(25px, 5vw, 32px);
+    margin: 0;
+}
+
+.description {
+    color: #666;
+    text-align: center;
+    font-size: clamp(14px, 2.5vw, 17px);
+    margin: 0;
+}
+
+.input {
+    padding: 10px 10px;
+    border-radius: 11.206px;
+    background: #F6F6F6;
+    border: none;
+    height: 50px;
+}
+
+.label {
+    color: #525252;
+    font-size: 16.809px;
+}
+
+.forget_password {
+    color: #111;
+    font-size: 16px;
+    text-decoration-line: underline;
+}
+
+.social_link {
+    border-radius: 30.618px;
+    border: 0.765px solid #333;
+}
+
+.social_link img {
+    height: 25px;
+}

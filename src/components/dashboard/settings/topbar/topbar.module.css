@@ -1,0 +1,40 @@
+.topbar {
+  padding: 1.3em 1em;
+  background-color: rgb(254, 253, 255);
+  width: 100%;
+}
+
+.nav_tree {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+  font-size: x-small;
+}
+
+.bold {
+  color: blue;
+}
+
+.topbar span:not(:last-child) {
+  cursor: pointer;
+}
+
+.topbar span:hover:not(:last-child) {
+  color: rgb(133, 133, 255) !important;
+}
+
+.topbar_heading {
+  font-size: 1rem;
+  margin-top: 1em;
+}
+
+@media screen and (min-width:668px) {
+  .topbar {
+    padding: 1.3em 2em;
+  }
+
+  .topbar .nav_tree {
+    gap: 1em;
+    font-size: var(--sub-title);
+  }
+}

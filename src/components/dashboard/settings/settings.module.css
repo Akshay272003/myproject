@@ -1,0 +1,15 @@
+.side_container {
+    display: none;
+}
+
+@media screen and (min-width:668px) {
+    .side_container {
+        display: flex;
+        width: 15em;
+        background-color: white;
+    }
+}
+
+.content_container {
+    width: 100%;
+}
