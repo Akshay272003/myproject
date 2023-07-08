@@ -29,10 +29,7 @@ const props = {
 };
 
 // main component 
-const UploadDocuments = ({ dialogId, setCommercialInvoice, setPackingList, setPanCardFront, setPanCardBack }) => {
-
-    const [fileType, setFileType] = useState(null);
-    // const [hasFile, setHasFile] = useState(false);
+const UploadDocuments = ({ dialogId, setCommercialInvoice, setPackingList, setPanCardFront, setPanCardBack, fileType, setFileType }) => {
 
     const [previewOpen, setPreviewOpen] = useState(false);
     const [previewImage, setPreviewImage] = useState('');
@@ -48,12 +45,12 @@ const UploadDocuments = ({ dialogId, setCommercialInvoice, setPackingList, setPa
         // if (fileList.length === 1) {
         //     if (fileType === "ci") { setCommercialInvoice("complete") }
         //     else if (fileType === "pl") { setPackingList("complete") }
-        //     else if (fileType === "pc") { setPanCardFront("complete") }
+        //     else if (fileType === "pcf") { setPanCardFront("complete") }
         // }
 
         if (fileType === "ci") { setCommercialInvoice("complete") }
         else if (fileType === "pl") { setPackingList("complete") }
-        else if (fileType === "pc") { setPanCardFront("complete") }
+        else if (fileType === "pcf") { setPanCardFront("complete") }
 
     }
 
@@ -125,7 +122,7 @@ const UploadDocuments = ({ dialogId, setCommercialInvoice, setPackingList, setPa
                         {/* <MenuItem className={Style.menu_item} value="none">Select Document Type</MenuItem> */}
                         <MenuItem className={Style.menu_item} value="ci">Commercial Invoice</MenuItem>
                         <MenuItem className={Style.menu_item} value="pl">Packing List</MenuItem>
-                        <MenuItem className={Style.menu_item} value="pc">PAN card</MenuItem>
+                        <MenuItem className={Style.menu_item} value="pcf">PAN card</MenuItem>
                         <MenuItem className={Style.menu_item} value="other">Others</MenuItem>
                     </Select>
                 </FormControl>

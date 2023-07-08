@@ -12,10 +12,13 @@ const DocumentCard = ({ title = "title", label }) => {
 
     const dialogId = "upload-documents";
 
+    const [fileType, setFileType] = useState(null);
+
     const [hasCommercialInvoice, setCommercialInvoice] = useState("normal");
     const [hasPackingList, setPackingList] = useState("normal");
     const [hasPanCardFront, setPanCardFront] = useState('normal');
     const [hasPanCardBack, setPanCardBack] = useState('normal');
+
 
     const getColor = (state) => {
         // console.log(state)
@@ -60,7 +63,9 @@ const DocumentCard = ({ title = "title", label }) => {
                         >Commercial Invoice <sup>*</sup></span>
 
                         {hasCommercialInvoice === "complete" &&
-                            <IconButton style={{ backgroundColor: 'rgba(52, 168, 85, 0.12)', width: '18px', height: '18px' }}>
+                            <IconButton
+                                onClick={() => { setFileType("ci"); openDialog(dialogId); }}
+                                style={{ backgroundColor: 'rgba(52, 168, 85, 0.12)', width: '18px', height: '18px' }}>
                                 <EditIcon style={{ color: '#34A855', fontSize: '12px' }} />
                             </IconButton>
                         }
@@ -77,7 +82,9 @@ const DocumentCard = ({ title = "title", label }) => {
                         >Packing List</span>
 
                         {hasPackingList === "complete" &&
-                            <IconButton style={{ backgroundColor: 'rgba(52, 168, 85, 0.12)', width: '18px', height: '18px' }}>
+                            <IconButton
+                                onClick={() => { setFileType("pl"); openDialog(dialogId); }}
+                                style={{ backgroundColor: 'rgba(52, 168, 85, 0.12)', width: '18px', height: '18px' }}>
                                 <EditIcon style={{ color: '#34A855', fontSize: '12px' }} />
                             </IconButton>
                         }
@@ -94,7 +101,9 @@ const DocumentCard = ({ title = "title", label }) => {
                         >PAN Card Front</span>
 
                         {hasPanCardFront === "complete" &&
-                            <IconButton style={{ backgroundColor: 'rgba(52, 168, 85, 0.12)', width: '18px', height: '18px' }}>
+                            <IconButton
+                                onClick={() => { setFileType("pcf"); openDialog(dialogId); }}
+                                style={{ backgroundColor: 'rgba(52, 168, 85, 0.12)', width: '18px', height: '18px' }}>
                                 <EditIcon style={{ color: '#34A855', fontSize: '12px' }} />
                             </IconButton>
                         }
@@ -111,7 +120,9 @@ const DocumentCard = ({ title = "title", label }) => {
                         >PAN Card Back</span>
 
                         {hasPanCardBack === "complete" &&
-                            <IconButton style={{ backgroundColor: 'rgba(52, 168, 85, 0.12)', width: '18px', height: '18px' }}>
+                            <IconButton
+                                onClick={() => { setFileType("other"); openDialog(dialogId); }}
+                                style={{ backgroundColor: 'rgba(52, 168, 85, 0.12)', width: '18px', height: '18px' }}>
                                 <EditIcon style={{ color: '#34A855', fontSize: '12px' }} />
                             </IconButton>
                         }
@@ -126,6 +137,8 @@ const DocumentCard = ({ title = "title", label }) => {
                     setPackingList={setPackingList}
                     setPanCardFront={setPanCardFront}
                     setPanCardBack={setPanCardBack}
+                    setFileType={setFileType}
+                    fileType={fileType}
                 />
             </Popup>
         </div>

@@ -30,8 +30,7 @@
 
 .add_button {
     width: clamp(15px, 2.5vw, 25px);
-    aspect-ratio: 1/1;
-
+    height: clamp(15px, 2.52vw, 25px);
     background-color: rgba(68, 49, 184, 1) !important;
 }
 

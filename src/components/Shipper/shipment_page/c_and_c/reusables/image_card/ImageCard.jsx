@@ -42,12 +42,15 @@ const ImageCard = ({ label, uploadedImages, dialogId }) => {
                                 <img src={imgDetails.img} style={{ width: '80px' }} />
                             </div>
                         ))}
-
-                        <div className="flex justify-content-center items-center" style={{ height: '80px', width: '80px' }}>
-                            <span
-                                style={{ color: '#4431BB', fontSize: '16px', fontWeight: '500', cursor: 'pointer' }}
-                            >6+</span>
-                        </div>
+                        {uploadedImages.length > 5 &&
+                            <div className="flex justify-content-center items-center" style={{ height: '80px', width: '40px' }}>
+                                <span
+                                    style={{ color: '#4431BB', fontSize: '16px', fontWeight: '500', cursor: 'pointer' }}
+                                    onClick={() => openDialog(dialogId)}
+                                >6+
+                                </span>
+                            </div>
+                        }
                     </div>
                     :
                     <div className="py-1 mt-1">

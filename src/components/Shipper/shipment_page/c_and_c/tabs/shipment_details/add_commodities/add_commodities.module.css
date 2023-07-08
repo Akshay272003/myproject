@@ -4,7 +4,7 @@
     font-weight: 600;
 }
 
-.close_btn {
+/* .close_btn {
     width: 29.005px !important;
     height: 29.005px !important;
     background-color: #F0F0F0 !important;
@@ -12,7 +12,7 @@
     position: absolute !important;
     left: -1.3em !important;
     top: 0 !important;
-}
+} */
 
 .label {
     color: #313131;

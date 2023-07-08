@@ -14,10 +14,41 @@
     color: #252525;
     font-size: clamp(14px, 2.5vw, 18px);
     font-weight: 500;
+    flex-basis: 80%;
+    padding-right: 1em;
 }
 
 .heading_helper {
     color: #4431B8;
     font-size: clamp(12px, 2vw, 15px);
     font-weight: 500;
+}
+
+.label {
+    flex-basis: 80%;
+    color: #5A6470;
+    font-size: clamp(11px, 2vw, 18px);
+    padding-right: 1em;
+}
+
+.value {
+    color: #5A6470;
+    font-size: clamp(11px, 2vw, 18px);
+}
+
+.promo_code_link {
+    color: #4431B8;
+    font-size: clamp(10px, 1.7vw, 16px);
+    font-weight: 600;
+}
+
+.radio_label {
+    color: #5A6470;
+    font-size: clamp(12px, 2vw, 17px);
+}
+
+.caution {
+    color: #FF8600;
+    font-size: clamp(14px, 2vw, 19px);
+    padding: 0 clamp(1em, 3vw, 2em);
 }

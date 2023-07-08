@@ -51,11 +51,11 @@ const AddCommodities = () => {
                     Commodities
                 </span>
 
-                <IconButton
+                {/* <IconButton
                     onClick={() => closeSlide(1)}
                     className={Style.close_btn}>
                     <CloseIcon />
-                </IconButton>
+                </IconButton> */}
             </div>
 
 

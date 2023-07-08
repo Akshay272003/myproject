@@ -40,15 +40,15 @@ const CustomCarousal = () => {
             >
                 <div className={Style.image_container}>
                     <img src="src\assets\authentication\container-yard.jpg" alt="" className={Style.carousel_img} />
-                    <p className={`${Style.legend} legend`}>The simples way to manage your workforce</p>
+                    <p className={`${Style.legend} legend`}>The simplest way to manage your workforce</p>
                 </div>
                 <div>
                     <img src="src\assets\authentication\container-yard.jpg" alt="" className={Style.carousel_img} />
-                    <p className={`${Style.legend} legend`}>The simples way to manage your workforce</p>
+                    <p className={`${Style.legend} legend`}>The simplest way to manage your workforce</p>
                 </div>
                 <div>
                     <img src="src\assets\authentication\container-yard.jpg" alt="" className={Style.carousel_img} />
-                    <p className={`${Style.legend} legend`}>The simples way to manage your workforce</p>
+                    <p className={`${Style.legend} legend`}>The simplest way to manage your workforce</p>
                 </div>
             </Carousel>
             <div className={Style.headline_container}>

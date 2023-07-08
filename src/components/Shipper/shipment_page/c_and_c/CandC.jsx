@@ -63,9 +63,14 @@ const CandC = () => {
             </div>
 
 
-            <div style={{ backgroundColor: '#F0F0F0' }} className={`p-2`}>
+            <div style={{ backgroundColor: '#F0F0F0', padding: 'clamp(1em, 2vw, 2em)' }}>
 
-                <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+                <Tabs
+                    value={value}
+                    onChange={handleChange}
+                    variant="scrollable"
+                    aria-label="basic tabs example"
+                >
                     <Tab label="SHIPMENT DETAILS" />
                     <Tab label="Shipment Charges" />
                     <Tab label="Quotes" />
